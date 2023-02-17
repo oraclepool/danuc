@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+	<changeSet id="4e7c3ffd6feb08a85a7526b91c7b31348d4e7e09" author="(KRISHNA)-Generated"     >
+		<n0:createOracleComment objectName="JOBS_comments" objectType="COMMENT" ownerName="KRISHNA" sourceType="STRING"  >
+			<n0:source><![CDATA[
+   COMMENT ON COLUMN "KRISHNA"."JOBS"."JOB_ID" IS 'Primary key of jobs table.';
+   COMMENT ON COLUMN "KRISHNA"."JOBS"."JOB_TITLE" IS 'A not null column that shows job title, e.g. AD_VP, FI_ACCOUNTANT';
+   COMMENT ON COLUMN "KRISHNA"."JOBS"."MIN_SALARY" IS 'Minimum salary for a job title.';
+   COMMENT ON COLUMN "KRISHNA"."JOBS"."MAX_SALARY" IS 'Maximum salary for a job title';
+   COMMENT ON TABLE "KRISHNA"."JOBS"  IS 'jobs table with job titles and salary ranges. Contains 19 rows.
+References with employees and job_history table.';]]></n0:source>
+		</n0:createOracleComment>
+	</changeSet>
+</databaseChangeLog>

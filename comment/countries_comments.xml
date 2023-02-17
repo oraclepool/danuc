@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+	<changeSet id="51685ca34521a53b2aa35de0c104ed92c9095792" author="(KRISHNA)-Generated"     >
+		<n0:createOracleComment objectName="COUNTRIES_comments" objectType="COMMENT" ownerName="KRISHNA" sourceType="STRING"  >
+			<n0:source><![CDATA[
+   COMMENT ON COLUMN "KRISHNA"."COUNTRIES"."COUNTRY_ID" IS 'Primary key of countries table.';
+   COMMENT ON COLUMN "KRISHNA"."COUNTRIES"."COUNTRY_NAME" IS 'Country name';
+   COMMENT ON COLUMN "KRISHNA"."COUNTRIES"."REGION_ID" IS 'Region ID for the country. Foreign key to region_id column in the departments table.';
+   COMMENT ON TABLE "KRISHNA"."COUNTRIES"  IS 'country table. Contains 25 rows. References with locations table.';]]></n0:source>
+		</n0:createOracleComment>
+	</changeSet>
+</databaseChangeLog>

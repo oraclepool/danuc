@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog 
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:n0="http://www.oracle.com/xml/ns/dbchangelog-ext" 
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog 
+	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+	<changeSet id="f14c8e28d2532a390deb12342fb2281fd5ec5dd9" author="(KRISHNA)-Generated"     >
+		<n0:createOracleRefConstraint objectName="JHIST_DEPT_FK" objectType="REF_CONSTRAINT" ownerName="KRISHNA"   >
+			<n0:source><![CDATA[
+  ALTER TABLE "KRISHNA"."JOB_HISTORY" ADD CONSTRAINT "JHIST_DEPT_FK" FOREIGN KEY ("DEPARTMENT_ID")
+	  REFERENCES "KRISHNA"."DEPARTMENTS" ("DEPARTMENT_ID") ENABLE;]]></n0:source>
+		</n0:createOracleRefConstraint>
+	</changeSet>
+</databaseChangeLog>
